@@ -11,9 +11,14 @@
 		309B424D27A78B2700D5D443 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309B424C27A78B2700D5D443 /* SceneDelegate.swift */; };
 		309B424F27A78B2700D5D443 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309B424E27A78B2700D5D443 /* ViewController.swift */; };
 		309B425227A78B2700D5D443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309B425027A78B2700D5D443 /* Main.storyboard */; };
-		309B425527A78B2700D5D443 /* BowTies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 309B425327A78B2700D5D443 /* BowTies.xcdatamodeld */; };
+		309B425527A78B2700D5D443 /* BowTie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 309B425327A78B2700D5D443 /* BowTie.xcdatamodeld */; };
 		309B425727A78B2800D5D443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 309B425627A78B2800D5D443 /* Assets.xcassets */; };
 		309B425A27A78B2800D5D443 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309B425827A78B2800D5D443 /* LaunchScreen.storyboard */; };
+		309B426227A78BBB00D5D443 /* SampleData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 309B426127A78BBB00D5D443 /* SampleData.plist */; };
+		309B426527A795F900D5D443 /* ColorAttributeTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309B426427A795F900D5D443 /* ColorAttributeTransformer.swift */; };
+		309B426827A7A75900D5D443 /* BowTie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309B426627A7A75900D5D443 /* BowTie+CoreDataClass.swift */; };
+		309B426927A7A75900D5D443 /* BowTie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309B426727A7A75900D5D443 /* BowTie+CoreDataProperties.swift */; };
+		309DA69427B019F600E4C6E9 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DA69327B019F600E4C6E9 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		309B425627A78B2800D5D443 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		309B425927A78B2800D5D443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		309B425B27A78B2800D5D443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		309B426127A78BBB00D5D443 /* SampleData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SampleData.plist; sourceTree = "<group>"; };
+		309B426427A795F900D5D443 /* ColorAttributeTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAttributeTransformer.swift; sourceTree = "<group>"; };
+		309B426627A7A75900D5D443 /* BowTie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BowTie+CoreDataClass.swift"; sourceTree = "<group>"; };
+		309B426727A7A75900D5D443 /* BowTie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BowTie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		309DA69327B019F600E4C6E9 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +52,8 @@
 		309B423E27A78B2700D5D443 = {
 			isa = PBXGroup;
 			children = (
+				309B426627A7A75900D5D443 /* BowTie+CoreDataClass.swift */,
+				309B426727A7A75900D5D443 /* BowTie+CoreDataProperties.swift */,
 				309B424927A78B2700D5D443 /* BowTies */,
 				309B424827A78B2700D5D443 /* Products */,
 			);
@@ -61,11 +73,14 @@
 				309B424A27A78B2700D5D443 /* AppDelegate.swift */,
 				309B424C27A78B2700D5D443 /* SceneDelegate.swift */,
 				309B424E27A78B2700D5D443 /* ViewController.swift */,
+				309DA69327B019F600E4C6E9 /* UIColorExtension.swift */,
+				309B426427A795F900D5D443 /* ColorAttributeTransformer.swift */,
 				309B425027A78B2700D5D443 /* Main.storyboard */,
 				309B425627A78B2800D5D443 /* Assets.xcassets */,
 				309B425827A78B2800D5D443 /* LaunchScreen.storyboard */,
+				309B425327A78B2700D5D443 /* BowTie.xcdatamodeld */,
 				309B425B27A78B2800D5D443 /* Info.plist */,
-				309B425327A78B2700D5D443 /* BowTies.xcdatamodeld */,
+				309B426127A78BBB00D5D443 /* SampleData.plist */,
 			);
 			path = BowTies;
 			sourceTree = "<group>";
@@ -130,6 +145,7 @@
 			files = (
 				309B425A27A78B2800D5D443 /* LaunchScreen.storyboard in Resources */,
 				309B425727A78B2800D5D443 /* Assets.xcassets in Resources */,
+				309B426227A78BBB00D5D443 /* SampleData.plist in Resources */,
 				309B425227A78B2700D5D443 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,9 +158,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				309B424F27A78B2700D5D443 /* ViewController.swift in Sources */,
-				309B425527A78B2700D5D443 /* BowTies.xcdatamodeld in Sources */,
+				309B426927A7A75900D5D443 /* BowTie+CoreDataProperties.swift in Sources */,
+				309B425527A78B2700D5D443 /* BowTie.xcdatamodeld in Sources */,
+				309DA69427B019F600E4C6E9 /* UIColorExtension.swift in Sources */,
 				309B424B27A78B2700D5D443 /* AppDelegate.swift in Sources */,
+				309B426827A7A75900D5D443 /* BowTie+CoreDataClass.swift in Sources */,
 				309B424D27A78B2700D5D443 /* SceneDelegate.swift in Sources */,
+				309B426527A795F900D5D443 /* ColorAttributeTransformer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,13 +386,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		309B425327A78B2700D5D443 /* BowTies.xcdatamodeld */ = {
+		309B425327A78B2700D5D443 /* BowTie.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				309B425427A78B2700D5D443 /* BowTies.xcdatamodel */,
 			);
 			currentVersion = 309B425427A78B2700D5D443 /* BowTies.xcdatamodel */;
-			path = BowTies.xcdatamodeld;
+			path = BowTie.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
